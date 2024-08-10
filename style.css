@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #768980;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#alarm-clock {
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#alarm-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#alarm-controls {
+    display: none;
+    margin-top: 20px;
+}
+
+#alarm-animation {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 20px auto;
+    animation: alarm-blink 1s infinite;
+}
+
+@keyframes alarm-blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
